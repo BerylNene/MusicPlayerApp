@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#cee7ea" >
+    android:layout_height="match_parent" 
+    android:background="#F0D8F0"> 
     
     <!-- Player Header -->
     <LinearLayout 
@@ -14,49 +14,29 @@
         android:paddingLeft="5dp"
         android:paddingRight="5dp">
         
-        <!-- Song Title -->"
-        
-        <!-- Playlist button -->
-
-        <ImageButton
-            android:id="@+id/btnShuffle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:background="@null"
-            android:src="@drawable/btn_shuffle" />
-
-        <ImageButton
-            android:id="@+id/btnRepeat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@null"
-            android:src="@drawable/btn_repeat" />
-
-        <TextView
+        <!-- Song Title -->
+        <TextView 
             android:id="@+id/songTitle"
-            android:layout_width="194dp"
-            android:layout_height="57dp"
-            android:layout_marginTop="10dp"
-            android:paddingLeft="10dp"
-            android:text="The Good, The Bad And The Ugly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:textColor="#04b3d2"
             android:textSize="16dp"
-            android:textStyle="bold" />
-
-        <ImageButton
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:text="The Good, The Bad And The Ugly"
+            android:layout_marginTop="10dp"/>"
+        
+        <!-- Playlist button -->
+        <ImageButton 
             android:id="@+id/btnPlaylist"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:background="@null"
-            android:src="@drawable/btn_playlist" />
-
+            android:src="@drawable/btn_playlist"
+            android:background="@null"/>
     </LinearLayout>
     
     <!-- Song Thumbnail Image -->
-
     <LinearLayout 
         android:id="@+id/songThumbnail"
         android:layout_width="fill_parent"
@@ -65,13 +45,9 @@
         android:paddingBottom="10dp"
         android:gravity="center"
         android:layout_below="@id/player_header_bg">
-
-    	<ImageView
-    	    android:layout_width="wrap_content"
-    	    android:layout_height="319dp"
-    	    android:backgroundTint="#ffffff"
-    	    android:src="@drawable/music" />
-    
+    	<ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/music"/>    
     </LinearLayout>
     
     <!-- Player Footer -->
@@ -180,9 +156,21 @@
         android:layout_above="@id/timerDisplay"
         android:gravity="center">
         <!-- Repeat Button -->
+        <ImageButton 
+            android:id="@+id/btnRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_repeat"
+            android:layout_marginRight="5dp"
+            android:background="@null"/>
         
-        <!-- Shuffle Button -->
-
+        <!-- Shuffle Button -->        
+         <ImageButton 
+            android:id="@+id/btnShuffle" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_shuffle"
+            android:layout_marginLeft="5dp"
+            android:background="@null"/>
     </LinearLayout>
-
 </RelativeLayout>
